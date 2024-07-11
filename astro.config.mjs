@@ -5,6 +5,6 @@ export default defineConfig({
   image: {
     service: passthroughImageService(),
   },
-  // site: "https://ascndia.github.io",
-  // base: "/cameroon",
+  site: "https://ascndia.github.io",
+  base: "/cameroon",
 });
