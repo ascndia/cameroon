@@ -3,6 +3,11 @@ import Navbar from "./Navbar.astro";
 import Footer from "./Footer.astro";
 import AOS from "aos";
 import "aos/dist/aos.css";
+interface Props {
+  title: string;
+  active: string;
+}
+const { active, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,11 +18,11 @@ import "aos/dist/aos.css";
     <link rel="stylesheet" href="/cameroon/styles.css" />
     <link
       rel="shortcut icon"
-      href="/logo.svg"
+      href="/cameroon/logo.svg"
       style="fill: var(--primary)"
       type="image/x-icon"
     />
-    <title>Cameroon Cafe - Quality Indonesian Cafeshop</title>
+    <title>{title}</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -35,7 +40,7 @@ import "aos/dist/aos.css";
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="animate__animated animate__fadeIn animate__slow">
-    <Navbar />
+    <Navbar active={active} />
     <slot />
     <Footer />
     <script

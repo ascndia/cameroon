@@ -1,0 +1,85 @@
+---
+import { Image } from "astro:assets";
+import Img from "../assets/carousel/1.webp";
+import Img2 from "../assets/carousel/2.webp";
+import Img3 from "../assets/carousel/3.jpg";
+import Img4 from "../assets/carousel/4.jpg";
+import Img5 from "../assets/carousel/5.jpg";
+---
+
+<div class="carousel-inner h-100">
+  <div class="carousel-item h-100 active">
+    <div class="h-100 w-100">
+      <div class="content">Lele</div>
+      <Image
+        style="object-fit: cover;"
+        class="w-100 h-100 img"
+        src={Img}
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="carousel-item h-100">
+    <div class="h-100 w-100">
+      <Image
+        style="object-fit: cover;"
+        class="w-100 h-100 img"
+        src={Img2}
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="carousel-item h-100">
+    <div class="h-100 w-100">
+      <Image
+        style="object-fit: cover;"
+        class="w-100 h-100 img"
+        src={Img3}
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="carousel-item h-100">
+    <div class="h-100 w-100">
+      <Image
+        style="object-fit: cover;"
+        class="w-100 img h-100"
+        src={Img4}
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="carousel-item h-100">
+    <div class="h-100 w-100">
+      <Image
+        style="object-fit: cover;"
+        class="w-100 h-100 img"
+        src={Img5}
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<style>
+  .img {
+    position: absolute;
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    background: transparent;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+</style>
