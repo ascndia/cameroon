@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import Img from "../../../assets/hampers.jpg";
+---
+
+<div class="my-5 pb-5" id="hampers">
+  <div class="container">
+    <div class="row row-cols-1 g-md-5 gy-3 gy-md-0 row-cols-md-2">
+      <div data-aos="fade-right">
+        <div class="fs-2 text-secondary text-uppercase fw-bold">hampers</div>
+        <div class="mt-3" style="color: var(--secondary);">
+          <p>
+            Jangan lewatkan momen istimewa orang - orang terdekatmu. Tunjukkan
+            perhatianmu dan kirimkan satu paket penuh cinta dengan parcel yang
+            berisi biji kopi terbaik Indonesia, racikan minuman terbaik dari
+            Coffee Toffee serta berbagai merchandise unik
+          </p>
+          <p>
+            Kalian bisa pesan di gerai terdekat sesuai keinginan dengan pesan
+            singkat menarik dan cocok buat moment Ied hampers, charity hampers,
+            birthday hampers, christmas hampers, wedding hampers, dan lain
+            iannya.
+          </p>
+          <p>
+            CATATAN. Layanan hampers ini kita sediakan untuk momen perayaan
+            tahun baru, Natal dan Idul Fitri. Apabila kamu ada momen spesial
+            lainnya, silahkan kontak gerai Coffee Toffee terdekat dan
+            konsultasikan kebutuhan kamu, dengan senang hati kami akan
+            memastikan momen spesial orang terdekatmu tidak terlewatkan dengan
+            begitu saja. 😘
+          </p>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <Image src={Img} class="w-100 h-100 rounded-0" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  p {
+    font-weight: 350;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-character;
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import Menu1 from "../../../assets/pack.png";
+---
+
+<div class="col">
+  <div class="card py-5 d-flex flex-column gap-2 border-0">
+    <div class="card-img">
+      <Image src={Menu1} class="w-100 h-100 rounded-0" alt="" />
+    </div>
+    <div class="card-title mt-3 fw-bold fs-5">Keychain</div>
+    <div class="card-desc">
+      UNIQUE. Gantungan kunci unik dan lucu, dengan tema berbagai peralatan kopi
+      serta kecintaan
+    </div>
+  </div>
+</div>
+<style>
+  .card-img {
+    object-fit: fit;
+    width: 100%;
+  }
+  .card-title {
+    text-transform: uppercase;
+  }
+  .card-desc {
+    color: var(--secondary);
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-character;
+  }
+</style>

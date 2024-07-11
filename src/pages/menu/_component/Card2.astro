@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import Menu1 from "../../../assets/pack.png";
+---
+
+<div class="col">
+  <div class="card py-5 d-flex flex-column gap-2 border-0">
+    <div class="card-img">
+      <Image src={Menu1} class="w-100 h-100 rounded-0" alt="" />
+    </div>
+    <div class="card-title mt-3 fw-bold fs-5">Coffe pack</div>
+    <div class="card-desc">
+      Terdapat beberapa single origin arabica specialty dengan aroma, rasa dan
+      karakter yang unik dari berbagai daerah yang bisa kamu pesan di gerai
+      coffee toffee untuk dinikmati di rumah atau sekedar untuk gift
+      keluarga/keluarga/kerabat kalian. di antaranya: bali kintamani, sumatera
+      linthong, bali batukaru, sumatera gayo, java mocha, mount malabar, dan
+      sulawesi toraja.
+    </div>
+    <div class="card-contact mt-2 fw-bold">
+      Kontak kami untuk order atau info lebih lanjut..
+    </div>
+  </div>
+</div>
+<style>
+  .card-img {
+    object-fit: fit;
+    width: 100%;
+  }
+  .card-title {
+    text-transform: uppercase;
+  }
+  .card-desc {
+    color: var(--secondary);
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-character;
+  }
+  .card-contact {
+    color: rgb(151, 151, 151);
+    font-size: 14px;
+  }
+</style>

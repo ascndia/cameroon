@@ -1,0 +1,62 @@
+<nav class="navbar py-2 shadow-sm navbar-expand-lg fixed-top bg-white">
+  <div class="container">
+    <a class="navbar-brand fs-4 fw-bold" href=" #"> CAMEROON </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarsExample11"
+      aria-controls="navbarsExample11"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample11">
+      <ul class="navbar-nav ms-auto justify-content-lg-center fw-semibold">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LAYANAN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MEMBER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PELUANG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BERITA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KONTAK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TENTANG KAMI</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<slot name="nav-bottom" />
+<style>
+  .navbar-brand {
+    color: var(--primary) !important;
+  }
+  .navbar-nav a {
+    font-weight: 700;
+    transition: 300ms;
+  }
+  .navbar-nav a:hover,
+  .navbar-nav .active {
+    color: var(--primary);
+  }
+  .navbar-nav a:not(:hover) {
+    color: var(--secondary) !important;
+  }
+</style>

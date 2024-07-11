@@ -1,0 +1,9 @@
+:root {
+  --primary: #c60000;
+  --secondary: #a7a7a7;
+}
+.decor {
+  width: 76px;
+  height: 12px;
+  background-color: var(--primary);
+}

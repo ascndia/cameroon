@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import Menu1 from "../assets/6p5I7EIH2fHFI3F18ChtwkwxVefhqkqJ0xLQxLeV.webp";
+---
+
+<section id="about" class="">
+  <div style="padding-top: 60px; padding-bottom: 60px;" class="container pb-5">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div data-aos="fade-right" class="col">
+        <div
+          style="text-transform: uppercase; color: var(--primary)"
+          class="fw-bold display-6"
+        >
+          cerita kami
+        </div>
+
+        <p class="text-secondary mt-4">
+          Dimulai dari satu outlet kecil di depan satu minimarket di kota
+          Surabaya, kami berkembang menjadi jaringan kedai kopi nasional dengan
+          cabang tersebar di banyak kota di Indonesia.
+        </p>
+        <p class="text-secondary mt-4">
+          Di tahun 2012, kami adalah pionir dan penggagas dalam gerakan bangga
+          terhadap kopi Indonesia dengan kampanye "Yes I Drink Indonesian
+          Coffee."
+        </p>
+        <p class="text-secondary pt-3">
+          Di tahun 2017, kami mendapatkan Penghargaan Indonesia Franchise Award
+          dari kementerian Perdagangan sebagai Pemenang Nasional. Penghargaan
+          ini serta diserahkan langsung oleh bapak Presiden RI Joko Widodo.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="col">
+        <Image class={"w-100 h-100"} src={Menu1} alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #about {
+    background-color: #f7f7f7;
+  }
+</style>
