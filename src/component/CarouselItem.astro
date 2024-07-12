@@ -9,69 +9,104 @@ import Img5 from "../assets/carousel/5.jpg";
 
 <div class="carousel-inner h-100">
   <div class="carousel-item h-100 active">
-    <div class="h-100 w-100">
-      <div class="content">Lele</div>
-      <Image
-        style="object-fit: cover;"
-        class="w-100 h-100 img"
-        src={Img}
-        alt=""
-      />
+    <div class="carousel-caption content">
+      <div class="carousel-title">MENU BARU COCKTAIL</div>
+      <div class="carousel-desc">Tersedia 5 varian</div>
+      <button class="carousel-btn btn">Lihat semua menu</button>
     </div>
+    <Image
+      style="object-fit: cover;"
+      class="w-100 h-100 img"
+      src={Img}
+      alt=""
+    />
   </div>
   <div class="carousel-item h-100">
-    <div class="h-100 w-100">
-      <Image
-        style="object-fit: cover;"
-        class="w-100 h-100 img"
-        src={Img2}
-        alt=""
-      />
+    <div class="carousel-caption content">
+      <div class="carousel-title">tentang kopi kami</div>
+      <div class="carousel-desc">
+        Kopi kami dipilih dari biji terbaik di seluruh dunia, dipanggang dengan
+        sempurna untuk memberikan rasa yang tak tertandingi. Nikmati setiap
+        tegukan yang penuh cita rasa.
+      </div>
+      <!-- <button class="carousel-btn btn">Lihat semua menu</button> -->
     </div>
+    <Image
+      style="object-fit: cover;"
+      class="w-100 h-100 img"
+      src={Img2}
+      alt=""
+    />
   </div>
   <div class="carousel-item h-100">
-    <div class="h-100 w-100">
-      <Image
-        style="object-fit: cover;"
-        class="w-100 h-100 img"
-        src={Img3}
-        alt=""
-      />
+    <div class="carousel-caption content">
+      <div class="carousel-title">JADILAH member kami</div>
+      <div class="carousel-desc">
+        Jadilah bagian dari komunitas kopi kami dan nikmati layanan serta
+        keuntungan yang dirancang khusus untuk Anda. Mulai dari pengiriman
+        gratis, akses ke varian kopi eksklusif, hingga diskon berlangganan
+        bulanan, kami memastikan setiap momen bersama kopi kami menjadi lebih
+        istimewa.
+      </div>
+      <button class="carousel-btn btn">Lihat keuntungan</button>
     </div>
+    <Image
+      style="object-fit: cover;"
+      class="w-100 h-100 img"
+      src={Img3}
+      alt=""
+    />
   </div>
   <div class="carousel-item h-100">
-    <div class="h-100 w-100">
-      <Image
-        style="object-fit: cover;"
-        class="w-100 img h-100"
-        src={Img4}
-        alt=""
-      />
+    <div class="carousel-caption content">
+      <div class="carousel-title">KUNJUNGI KAMI</div>
+      <div class="carousel-desc">
+        dan temukan berbagai pilihan kopi terbaik yang dipilih dengan cermat
+        dari seluruh dunia. Nikmati aroma menggoda dan cita rasa kaya di setiap
+        cangkir.
+      </div>
+      <button class="carousel-btn btn">Cari gerai terdekat</button>
     </div>
+    <Image
+      style="object-fit: cover;"
+      class="w-100 img h-100"
+      src={Img4}
+      alt=""
+    />
   </div>
   <div class="carousel-item h-100">
-    <div class="h-100 w-100">
-      <Image
-        style="object-fit: cover;"
-        class="w-100 h-100 img"
-        src={Img5}
-        alt=""
-      />
+    <div class="carousel-caption content">
+      <div class="carousel-title">Penghargaan</div>
+      <div class="carousel-desc">
+        Cameroon telah diakui sebagai kopi terbaik dalam berbagai kompetisi
+        nasional dan internasional. Penghargaan ini mencerminkan dedikasi kami
+        dalam menghadirkan kualitas terbaik di setiap cangkir.
+      </div>
+      <button class="carousel-btn btn">Lihat penghargaan</button>
     </div>
+    <Image
+      style="object-fit: cover;"
+      class="w-100 h-100 img"
+      src={Img5}
+      alt=""
+    />
   </div>
 </div>
 <style>
   .img {
-    position: absolute;
+    display: block;
   }
   .content {
     height: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 12px;
     background: transparent;
-    /* flex-direction: column; */
+    z-index: 20;
     justify-content: center;
     align-items: center;
   }
+
   .carousel-item:after {
     content: "";
     display: block;
@@ -81,5 +116,28 @@ import Img5 from "../assets/carousel/5.jpg";
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
+  }
+  .carousel-title {
+    color: white;
+    font-weight: 600;
+    font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .carousel-desc {
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 2px;
+  }
+  .carousel-btn {
+    font-size: x-large;
+    padding: 8px;
+    border: 3px solid white;
+    color: white;
+  }
+  .carousel-btn:hover {
+    color: var(--secondary);
+
+    border-color: var(--secondary);
   }
 </style>

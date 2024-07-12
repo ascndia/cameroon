@@ -1,0 +1,31 @@
+---
+import classNames from "classnames";
+
+interface Props {
+  active: string;
+  title: string;
+  href: string;
+  endpoint: string;
+}
+const { active, title, href, endpoint } = Astro.props;
+
+const NavClass = classNames("nav-link", active === endpoint && "active");
+---
+
+<li class="nav-item">
+  <a class={NavClass} aria-current="page" href={href}>{title}</a>
+</li>
+
+<style>
+  .nav-item a {
+    font-weight: 700;
+    transition: 300ms;
+  }
+  .nav-item a:hover,
+  .active {
+    color: var(--primary) !important;
+  }
+  .nav-item a:not(:hover) {
+    color: var(--secondary);
+  }
+</style>
